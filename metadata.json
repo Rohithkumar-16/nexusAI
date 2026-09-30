@@ -1,0 +1,6 @@
+{
+  "name": "AuraCraft AI — Social Creator Studio",
+  "description": "Next-gen glassmorphism AI content creator & social media companion for LinkedIn, Twitter/X, and Instagram with Gen-Z insights and smart scheduling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

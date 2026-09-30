@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0B0814;
+    color: #F1F5F9;
+    min-height: 100vh;
+  }
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(18, 13, 36, 0.68);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+  box-shadow: 0 12px 40px -8px rgba(0, 0, 0, 0.5), 0 0 25px -4px rgba(168, 85, 247, 0.12);
+}
+
+.glass-panel-elevated {
+  background: rgba(24, 17, 46, 0.78);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(192, 132, 252, 0.25);
+  box-shadow: 0 16px 48px -10px rgba(0, 0, 0, 0.6), 0 0 35px -5px rgba(168, 85, 247, 0.2);
+}
+
+.glass-card {
+  background: rgba(23, 17, 44, 0.52);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.14);
+}
+
+.glass-card-interactive {
+  background: rgba(23, 17, 44, 0.52);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.14);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  background: rgba(32, 22, 64, 0.72);
+  border-color: rgba(192, 132, 252, 0.35);
+  box-shadow: 0 12px 30px -6px rgba(0, 0, 0, 0.4), 0 0 24px -2px rgba(168, 85, 247, 0.22);
+  transform: translateY(-1px);
+}
+
+.glass-input {
+  background: rgba(13, 9, 26, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.glass-input:focus {
+  border-color: rgba(192, 132, 252, 0.6);
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.18), 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* Glowing Accents */
+.glow-purple-sm {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
+}
+
+.glow-purple-md {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.35);
+}
+
+.glow-purple-lg {
+  box-shadow: 0 0 45px rgba(168, 85, 247, 0.45);
+}
+
+.glow-border {
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  box-shadow: inset 0 0 15px rgba(168, 85, 247, 0.08), 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 10, 30, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.55);
+}
